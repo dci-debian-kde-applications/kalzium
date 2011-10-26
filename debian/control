@@ -26,6 +26,8 @@ Package: kalzium
 Architecture: any
 Section: science
 Depends: ${shlibs:Depends}, ${misc:Depends}, kalzium-data (>= ${source:Version})
+Breaks: libkdeedu4 (<< 4:4.6.80), libscience4
+Replaces: libkdeedu4 (<< 4:4.6.80), libscience4
 Suggests: khelpcenter4
 Description: periodic table and chemistry tools for KDE
  Kalzium is a full-featured chemistry application for KDE, including a
@@ -41,44 +43,6 @@ Depends: ${misc:Depends}
 Description: data files for Kalzium
  This package contains architecture-independent data files for Kalzium, the
  KDE periodic table application.
- .
- This package is part of the KDE education module.
-
-Package: kalzium-dev
-Architecture: any
-Section: devel
-Depends: ${misc:Depends}, libscience4 (= ${binary:Version}),
- libcompoundviewer4 (= ${binary:Version}) [i386 amd64 powerpc], kalzium (= ${binary:Version})
-Breaks: libkdeedu-dev (<< 4:4.6.80)
-Replaces: libkdeedu-dev (<< 4:4.6.80)
-Description: development headers for Kalzium
- This package contains the development headers for libscience and
- libcompoundviewer.
- .
- This package is part of the KDE education module.
-
-Package: libscience4
-Architecture: any
-Section: libs
-Depends: ${shlibs:Depends}, ${misc:Depends}, libkdeedu-data (>= ${source:Upstream-Version})
-Replaces: libkdeedu4 (<< 4:4.6.80)
-Breaks: libkdeedu4 (<< 4:4.6.80)
-Description: library providing classes for chemical data
- This package contains a library that provides classes for chemical data. This
- library is mainly used by Kalzium.
- .
- This package is part of the KDE education module.
-
-Package: libcompoundviewer4
-Architecture: i386 amd64 powerpc
-Section: libs
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: kalzium (<< 4:4.6.80)
-Replaces: kalzium (<< 4:4.6.80)
-Description: library for Molecular Graphics and Modelling using Avogadro
- This package contains a library that provides classes for molecular modelling
- using the Molecular Graphics and Modelling System Avogadro. This library is
- mainly used by Kalzium.
  .
  This package is part of the KDE education module.
 
