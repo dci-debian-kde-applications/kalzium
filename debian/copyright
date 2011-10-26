@@ -15,6 +15,7 @@ License: GPL-2+
 
 Files: debian/*
 Copyright: 2011 Kubuntu Developers <kubuntu-devel@lists.launchpad.net>
+Copyright: 2011 Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 License: GPL-2+
 
 Files: src/unitsettingsdialog.* src/kalziumunitcombobox.*
