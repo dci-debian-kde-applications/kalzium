@@ -19,8 +19,8 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.7.1),
  libx11-dev,
 Standards-Version: 3.9.2
 Homepage: http://edu.kde.org/
-Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kalzium
-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kalzium
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kalzium.git
+Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kalzium.git
 
 Package: kalzium
 Architecture: any
