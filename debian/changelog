@@ -1,0 +1,64 @@
+kalzium (4:4.7.1-0ubuntu3) oneiric; urgency=low
+
+  * kalzium-dev should only depend on libcompoundviewer4 on i386, amd64, and
+    powerpc since libcompoundviewer4 doesn't exist on armel
+
+ -- Scott Kitterman <scott@kitterman.com>  Mon, 19 Sep 2011 17:56:39 -0400
+
+kalzium (4:4.7.1-0ubuntu2) oneiric; urgency=low
+
+  * No-change rebuild so translations aren't stripped from .desktop
+    files anymore.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Thu, 15 Sep 2011 23:12:30 +0200
+
+kalzium (4:4.7.1-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Kolberg <bulldog98@kubuntu-de.org>  Fri, 09 Sep 2011 09:06:54 -0400
+
+kalzium (4:4.7.0-0ubuntu4) oneiric; urgency=low
+
+  * Change libscience4 depends on libkdeedu-data to source:Upstream-Version to
+    fix installability
+
+ -- Scott Kitterman <scott@kitterman.com>  Mon, 29 Aug 2011 10:21:05 -0400
+
+kalzium (4:4.7.0-0ubuntu3) oneiric; urgency=low
+
+  * No-change rebuild against fixed avogadro to resolve FTBFS.
+    (LP: #829447)
+
+ -- Daniel T Chen <crimsun@ubuntu.com>  Sun, 28 Aug 2011 15:06:14 -0400
+
+kalzium (4:4.7.0-0ubuntu2) oneiric; urgency=low
+
+  * Bump breaks/replaces on libkdeedu4 to catch 4.6.5 packages 
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 28 Jul 2011 18:07:10 +0200
+
+kalzium (4:4.7.0-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release 
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sat, 23 Jul 2011 00:04:32 +0200
+
+kalzium (4:4.6.90+repack-0ubuntu2) oneiric; urgency=low
+
+  * debian/control:
+    - libcompoundviewer4 breaks/replaces kalzium << 4:4.6.80 
+    - don't build libcompoundviewer4 on armel
+  * remove kalzium.install.armel and add kalzium-dev.install.armel since the 
+    relevant files moved.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 10 Jul 2011 01:06:39 +0200
+
+kalzium (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release candidate
+  * Repack source to include COPYING files
+  * Update packaging for split source
+    - add new package for libcompoundviewer and kalzium-dev
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 03 Jul 2011 12:28:58 +0200

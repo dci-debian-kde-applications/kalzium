@@ -1,0 +1,32 @@
+From: Modestas Vainius <modax@debian.org>
+Subject: disable INSTALL_RPATH_USE_LINK_PATH where it triggers useless RPATH
+ .
+ kalzium: lintian output: 'binary-or-shlib-defines-rpath ./usr/bin/kalzium /usr/lib/ocaml', automatically rejected package.
+Forwarded: not-needed
+Origin: vendor
+Last-Update: 2011-07-03
+Index: kalzium-4.6.90+repack/src/CMakeLists.txt
+===================================================================
+--- kalzium-4.6.90+repack.orig/src/CMakeLists.txt	2011-07-03 12:09:44.000000000 +0200
++++ kalzium-4.6.90+repack/src/CMakeLists.txt	2011-07-03 12:10:34.052398102 +0200
+@@ -133,6 +133,7 @@
+ 
+ kde4_add_executable(kalzium ${kalzium_SRCS})
+ 
++set_target_properties(kalzium PROPERTIES INSTALL_RPATH_USE_LINK_PATH false)
+ target_link_libraries(kalzium ${KDE4_KHTML_LIBRARY} ${KDE4_KNEWSTUFF3_LIBS} ${KDE4_KUNITCONVERSION_LIBS} ${QT_QTSCRIPT_LIBRARY} science)
+ 
+ if (OPENBABEL2_FOUND)
+Index: kalzium-4.6.90+repack/compoundviewer/CMakeLists.txt
+===================================================================
+--- kalzium-4.6.90+repack.orig/compoundviewer/CMakeLists.txt	2011-05-20 22:33:53.000000000 +0200
++++ kalzium-4.6.90+repack/compoundviewer/CMakeLists.txt	2011-07-03 12:10:34.052398102 +0200
+@@ -22,6 +22,7 @@
+    avogadro
+ )
+ 
+-set_target_properties(compoundviewer PROPERTIES VERSION ${GENERIC_LIB_VERSION} SOVERSION ${GENERIC_LIB_SOVERSION})
++set_target_properties(compoundviewer PROPERTIES VERSION ${GENERIC_LIB_VERSION} SOVERSION ${GENERIC_LIB_SOVERSION}
++   INSTALL_RPATH_USE_LINK_PATH false)
+ 
+ install(TARGETS compoundviewer ${INSTALL_TARGETS_DEFAULT_ARGS})
