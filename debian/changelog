@@ -1,7 +1,8 @@
-kalzium (4:4.7.2-0r1) UNRELEASED; urgency=low
+kalzium (4:4.7.2-0r2) UNRELEASED; urgency=low
 
   [ Eshat Cakar ]
   [ José Manuel Santamaría Lema ]
+  [ Pino Toscano ]
   * Initial release. Start from the Ubuntu packaging, thanks!
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 26 Oct 2011 21:48:44 +0200
