@@ -1,6 +1,8 @@
 kalzium (4:4.8.4-0r1) UNRELEASED; urgency=low
 
-  * 
+  * New upstream
+    - adapt & refresh patch
+    - adapt install files
 
  -- Sune Vuorela <sune@debian.org>  Sun, 17 Jun 2012 02:16:35 +0200
 

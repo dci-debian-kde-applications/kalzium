@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Eshat Cakar <info@eshat.de>,
  José Manuel Santamaría Lema <panfaust@gmail.com>
-Build-Depends: kde-sc-dev-latest (>= 4:4.7.4),
+Build-Depends: kde-sc-dev-latest (>= 4:4.8.4),
  cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
  kdelibs5-dev (>= 4:4.7),
  libqt4-opengl-dev,
@@ -26,8 +26,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, kalzium-data (>= ${source:Version})
 Breaks: libkdeedu4 (<< 4:4.6.2), libscience4
 Replaces: libkdeedu4 (<< 4:4.6.2), libscience4
 Suggests: khelpcenter4
-Description: periodic table and chemistry tools for KDE
- Kalzium is a full-featured chemistry application for KDE, including a
+Description: periodic table and chemistry tools 
+ Kalzium is a full-featured chemistry application, including a
  Periodic Table of Elements, chemical reference, chemical equation solver, and
  3D molecule viewer.
  .
