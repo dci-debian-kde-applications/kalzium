@@ -2,6 +2,7 @@ kalzium (4:4.11.3-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Update build dependencies.
+  * Switch to eigen3, thanks to Anton Gladky. (Closes: #728324)
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 08 Nov 2013 14:23:18 +0100
 
