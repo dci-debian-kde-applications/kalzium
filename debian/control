@@ -3,20 +3,23 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Eshat Cakar <info@eshat.de>,
- Sune Vuorela <sune@debian.org>,
- Maximiliano Curia <maxy@debian.org>
-Build-Depends: kdelibs5-dev (>= 4:4.11),
- kde-sc-dev-latest (>= 4:4.11),
- cmake, debhelper (>= 9), pkg-kde-tools (>= 0.14),
- libqt4-opengl-dev,
- libboost-python-dev,
- libfacile-ocaml-dev,
- libopenbabel-dev, pkg-config,
- libeigen3-dev (>> 2.0.3),
- libavogadro-dev,
- libglew-dev,
- libsm-dev,
- chemical-mime-data
+           Sune Vuorela <sune@debian.org>,
+           Maximiliano Curia <maxy@debian.org>
+Build-Depends: chemical-mime-data,
+               cmake,
+               debhelper (>= 9),
+               kde-sc-dev-latest (>= 4:4.11),
+               kdelibs5-dev (>= 4:4.11),
+               libavogadro-dev,
+               libboost-python-dev,
+               libeigen3-dev (>> 2.0.3),
+               libfacile-ocaml-dev,
+               libglew-dev,
+               libopenbabel-dev,
+               libqt4-opengl-dev,
+               libsm-dev,
+               pkg-config,
+               pkg-kde-tools (>= 0.14)
 Standards-Version: 3.9.5
 Homepage: http://edu.kde.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/kalzium.git
@@ -25,10 +28,10 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/kalzium.git
 Package: kalzium
 Architecture: any
 Section: science
-Depends: ${shlibs:Depends}, ${misc:Depends}, kalzium-data (>= ${source:Version})
+Depends: kalzium-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkdeedu4 (<< 4:4.6.2), libscience4
 Replaces: libkdeedu4 (<< 4:4.6.2), libscience4
-Suggests: khelpcenter4, chemical-mime-data
+Suggests: chemical-mime-data, khelpcenter4
 Description: periodic table and chemistry tools
  Kalzium is a full-featured chemistry application, including a
  Periodic Table of Elements, chemical reference, chemical equation solver, and
@@ -50,7 +53,7 @@ Package: kalzium-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends: ${misc:Depends}, kalzium (= ${binary:Version})
+Depends: kalzium (= ${binary:Version}), ${misc:Depends}
 Breaks: kdeedu-dbg
 Replaces: kdeedu-dbg
 Description: debugging symbols for the Kalzium
