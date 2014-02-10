@@ -1,4 +1,4 @@
-kalzium (4:4.12.2-1) UNRELEASED; urgency=medium
+kalzium (4:4.12.2-1) experimental; urgency=medium
 
   * Enable build failures on missing symbols.
   * Do not disable an empty test set.
@@ -7,7 +7,7 @@ kalzium (4:4.12.2-1) UNRELEASED; urgency=medium
   * Bump kde-sc-dev-latest build dependency.
   * Update build dependencies.
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 19:07:31 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:31:40 +0100
 
 kalzium (4:4.11.3-1) unstable; urgency=low
 
