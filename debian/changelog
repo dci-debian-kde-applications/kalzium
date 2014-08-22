@@ -1,6 +1,7 @@
 kalzium (4:4.14.0-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Remove upstream applied patch: eigen3.patch
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 22 Aug 2014 06:13:20 +0200
 
