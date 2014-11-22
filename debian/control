@@ -1,8 +1,7 @@
 Source: kalzium
 Section: kde
 Priority: optional
-Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
-XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Eshat Cakar <info@eshat.de>,
            Sune Vuorela <sune@debian.org>,
            Maximiliano Curia <maxy@debian.org>
@@ -24,10 +23,8 @@ Build-Depends: chemical-mime-data,
                pkg-kde-tools (>= 0.14)
 Standards-Version: 3.9.5
 Homepage: http://edu.kde.org/
-Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kalzium
-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kalzium
-X-Debian-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kalzium.git
-X-Debian-Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kalzium.git
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-applications/kalzium.git
+Vcs-Git: git://git.debian.org/pkg-kde/kde-applications/kalzium.git
 
 Package: kalzium
 Architecture: any

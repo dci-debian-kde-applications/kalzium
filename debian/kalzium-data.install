@@ -1,3 +1,4 @@
+usr/share/appdata/kalzium.appdata.xml
 usr/share/doc/kde/HTML/en/kalzium/
 usr/share/icons/hicolor/128x128/apps/kalzium.png
 usr/share/icons/hicolor/16x16/apps/kalzium.png
@@ -12,4 +13,3 @@ usr/share/kde4/apps/libkdeedu/data/
 usr/share/kde4/config.kcfg/kalzium.kcfg
 usr/share/kde4/config/kalzium.knsrc
 usr/share/man/man1/kalzium.1
-usr/share/appdata/kalzium.appdata.xml
