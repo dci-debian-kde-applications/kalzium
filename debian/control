@@ -32,7 +32,7 @@ Section: science
 Depends: kalzium-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkdeedu4 (<< 4:4.6.2), libscience4
 Replaces: libkdeedu4 (<< 4:4.6.2), libscience4
-Suggests: chemical-mime-data, khelpcenter4
+Suggests: chemical-mime-data, khelpcenter
 Description: periodic table and chemistry tools
  Kalzium is a full-featured chemistry application, including a
  Periodic Table of Elements, chemical reference, chemical equation solver, and
