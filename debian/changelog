@@ -1,11 +1,11 @@
-kalzium (4:14.11.95-0ubuntu1) UNRELEASED; urgency=medium
+kalzium (4:14.11.97-0ubuntu1) UNRELEASED; urgency=medium
 
   * Merge with debian unstable, remaining changes:
     - only build-depend on libavogadro-dev on !armhf
     - add kalzium.install.armhf
   * Fix watch urls for new release location.
   * Update Vcs urls for the new repository location.
-  * New upstream beta release
+  * New upstream release candidate
   * Suggest khelpcenter instead of khelpcenter4.
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sat, 22 Nov 2014 14:51:56 +0100
