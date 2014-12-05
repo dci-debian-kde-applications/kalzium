@@ -23,7 +23,7 @@ Build-Depends: chemical-mime-data,
                pkg-kde-tools (>= 0.14)
 Standards-Version: 3.9.5
 Homepage: http://edu.kde.org/
-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-applications/kalzium.git
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-applications/kalzium.git/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-applications/kalzium.git
 
 Package: kalzium
