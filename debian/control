@@ -29,7 +29,9 @@ Vcs-Git: git://git.debian.org/pkg-kde/kde-applications/kalzium.git
 Package: kalzium
 Architecture: any
 Section: science
-Depends: kalzium-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: kalzium-data (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Breaks: libkdeedu4 (<< 4:4.6.2), libscience4
 Replaces: libkdeedu4 (<< 4:4.6.2), libscience4
 Suggests: chemical-mime-data, khelpcenter
