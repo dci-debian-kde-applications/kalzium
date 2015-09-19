@@ -4,6 +4,7 @@ kalzium (4:15.08.0-1~) UNRELEASED; urgency=medium
   * New upstream release (15.04.1).
   * New upstream release (15.04.2).
   * New upstream release (15.08.0).
+  * Add libsoprano-dev build dep.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 08 Sep 2015 12:19:33 +0200
 
