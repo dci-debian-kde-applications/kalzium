@@ -8,4 +8,4 @@ override_dh_makeshlibs:
 	$(overridden_command) -V
 
 override_dh_strip:
-	$(overridden_command) --dbg-package=kalzium-dbg
+	$(overridden_command) --ddeb-migration='kalzium-dbg (<= 4:15.08.3-1~~)'
