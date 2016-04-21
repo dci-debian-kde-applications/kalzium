@@ -1,8 +1,20 @@
-Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Thu, 21 Apr 2016 04:27:25 +0200
+Subject: avoid_nameclash
+
 ===================================================================
---- kalzium.orig/plasmoid/applet/gasPlasmoid/gasCalculator.cpp	2016-01-29 12:51:59.868499690 +0100
-+++ kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.cpp	2016-01-30 18:28:53.626722528 +0100
-@@ -427,7 +427,7 @@
+---
+ plasmoid/applet/gasPlasmoid/gasCalculator.cpp | 12 ++++++------
+ plasmoid/applet/gasPlasmoid/gasCalculator.h   |  2 +-
+ src/calculator/gasCalculator.cpp              | 12 ++++++------
+ src/calculator/gasCalculator.h                |  2 +-
+ 4 files changed, 14 insertions(+), 14 deletions(-)
+
+diff --git a/plasmoid/applet/gasPlasmoid/gasCalculator.cpp b/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
+index de78078..a777a06 100644
+--- a/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
++++ b/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
+@@ -427,7 +427,7 @@ void gasCalculator::calculatePressure()
      double temp = (m_converter->convert(m_Temp, "kelvins")).number();
      double b = (m_converter->convert(m_Vand_B, "liters")).number();
  
@@ -11,7 +23,7 @@ Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
      m_Pressure = Value(pressure, "atmospheres");
      m_Pressure = m_converter->convert(m_Pressure, m_pressureUnit->nativeWidget()->currentText());
      m_pressure->setValue(m_Pressure.number());
-@@ -444,7 +444,7 @@
+@@ -444,7 +444,7 @@ void gasCalculator::calculateMolarMass()
      double temp = ((m_converter->convert(m_Temp, "kelvins")).number());
      double b = ((m_converter->convert(m_Vand_B, "liters")).number());
  
@@ -20,7 +32,7 @@ Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
                    / (volume - m_Moles * b);
      m_molarMass->setValue(m_MolarMass);
  }
-@@ -457,7 +457,7 @@
+@@ -457,7 +457,7 @@ void gasCalculator::calculateVol()
      double temp = ((m_converter->convert(m_Temp, "kelvins")).number());
      double b = ((m_converter->convert(m_Vand_B, "liters")).number());
  
@@ -29,7 +41,7 @@ Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
      m_Vol = Value(volume, "liters");
      m_Vol = (m_converter->convert(m_Vol, m_volumeUnit->nativeWidget()->currentText()));
      m_volume->setValue(m_Vol.number());
-@@ -472,7 +472,7 @@
+@@ -472,7 +472,7 @@ void gasCalculator::calculateTemp()
      double b = ((m_converter->convert(m_Vand_B, "liters")).number());
  
      temp = (pressure + (m_Moles * m_Moles * m_Vand_A / volume / volume))\
@@ -38,7 +50,7 @@ Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
      m_Temp = Value(temp, "kelvins");
      m_Temp = (m_converter->convert(m_Temp, m_temperatureUnit->nativeWidget()->currentText()));
      m_temperature->setValue(m_Temp.number());
-@@ -487,7 +487,7 @@
+@@ -487,7 +487,7 @@ void gasCalculator::calculateMoles()
      double b = ((m_converter->convert(m_Vand_B, "liters")).number());
  
      m_Moles = (pressure + m_Moles * m_Moles * m_Vand_A / volume / volume)\
@@ -47,7 +59,7 @@ Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
      m_moles->setValue(m_Moles);
  }
  
-@@ -501,7 +501,7 @@
+@@ -501,7 +501,7 @@ void gasCalculator::calculateMass()
      double b = ((m_converter->convert(m_Vand_B, "liters")).number());
  
      mass = (pressure + m_Moles * m_Moles * m_Vand_A / volume / volume)\
@@ -56,10 +68,10 @@ Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.cpp
      m_Mass = Value(mass, "grams");
      m_Mass = (m_converter->convert(m_Mass, m_massUnit->nativeWidget()->currentText()));
      m_mass->setValue(m_Mass.number());
-Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.h
-===================================================================
---- kalzium.orig/plasmoid/applet/gasPlasmoid/gasCalculator.h	2016-01-29 12:51:59.868499690 +0100
-+++ kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.h	2016-01-30 18:27:52.641166807 +0100
+diff --git a/plasmoid/applet/gasPlasmoid/gasCalculator.h b/plasmoid/applet/gasPlasmoid/gasCalculator.h
+index f552742..c8936fd 100644
+--- a/plasmoid/applet/gasPlasmoid/gasCalculator.h
++++ b/plasmoid/applet/gasPlasmoid/gasCalculator.h
 @@ -23,7 +23,7 @@
  
  #include "ui_gasCalculatorConfig.h"
@@ -69,11 +81,11 @@ Index: kalzium/plasmoid/applet/gasPlasmoid/gasCalculator.h
  
  namespace Plasma{
      class ComboBox;
-Index: kalzium/src/calculator/gasCalculator.cpp
-===================================================================
---- kalzium.orig/src/calculator/gasCalculator.cpp	2016-01-29 12:51:59.872499528 +0100
-+++ kalzium/src/calculator/gasCalculator.cpp	2016-01-30 18:29:46.584599932 +0100
-@@ -140,7 +140,7 @@
+diff --git a/src/calculator/gasCalculator.cpp b/src/calculator/gasCalculator.cpp
+index adef7f5..047496d 100644
+--- a/src/calculator/gasCalculator.cpp
++++ b/src/calculator/gasCalculator.cpp
+@@ -140,7 +140,7 @@ void gasCalculator::calculatePressure()
      double temp = m_temp.convertTo(KUnitConversion::Kelvin).number();
      double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
  
@@ -82,7 +94,7 @@ Index: kalzium/src/calculator/gasCalculator.cpp
  
      m_pressure = Value(pressure, KUnitConversion::Atmosphere);
      m_pressure = m_pressure.convertTo(getCurrentUnitId(ui.pressure_unit));
-@@ -155,7 +155,7 @@
+@@ -155,7 +155,7 @@ void gasCalculator::calculateMolarMass()
      double temp = m_temp.convertTo(KUnitConversion::Kelvin).number();
      double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
  
@@ -91,7 +103,7 @@ Index: kalzium/src/calculator/gasCalculator.cpp
                    / (volume - m_moles * b);
      ui.molarMass->setValue(m_molarMass);
  }
-@@ -166,7 +166,7 @@
+@@ -166,7 +166,7 @@ void gasCalculator::calculateVol()
      double temp = m_temp.convertTo(KUnitConversion::Kelvin).number();
      double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
  
@@ -100,7 +112,7 @@ Index: kalzium/src/calculator/gasCalculator.cpp
      m_vol = Value(volume, KUnitConversion::Liter);
      m_vol = m_vol.convertTo(getCurrentUnitId(ui.volume_unit));
      ui.volume->setValue(m_vol.number());
-@@ -179,7 +179,7 @@
+@@ -179,7 +179,7 @@ void gasCalculator::calculateTemp()
      double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
  
      double temp = (pressure + (m_moles * m_moles * m_Vand_a / volume / volume))\
@@ -109,7 +121,7 @@ Index: kalzium/src/calculator/gasCalculator.cpp
      m_temp = Value(temp, KUnitConversion::Kelvin);
      m_temp = m_temp.convertTo(getCurrentUnitId(ui.temp_unit));
      ui.temp->setValue(m_temp.number());
-@@ -193,7 +193,7 @@
+@@ -193,7 +193,7 @@ void gasCalculator::calculateMoles()
      double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
  
      m_moles = (pressure + m_moles * m_moles * m_Vand_a / volume / volume)\
@@ -118,7 +130,7 @@ Index: kalzium/src/calculator/gasCalculator.cpp
      ui.moles->setValue(m_moles);
  }
  
-@@ -205,7 +205,7 @@
+@@ -205,7 +205,7 @@ void gasCalculator::calculateMass()
      double b = m_Vand_b.convertTo(KUnitConversion::Liter).number();
  
      double mass = (pressure + m_moles * m_moles * m_Vand_a / volume / volume)\
@@ -127,10 +139,10 @@ Index: kalzium/src/calculator/gasCalculator.cpp
      m_mass = Value(mass, KUnitConversion::Gram);
      m_mass = m_mass.convertTo(getCurrentUnitId(ui.mass_unit));
      ui.mass->setValue(m_mass.number());
-Index: kalzium/src/calculator/gasCalculator.h
-===================================================================
---- kalzium.orig/src/calculator/gasCalculator.h	2016-01-29 12:51:59.872499528 +0100
-+++ kalzium/src/calculator/gasCalculator.h	2016-01-30 18:27:14.006715224 +0100
+diff --git a/src/calculator/gasCalculator.h b/src/calculator/gasCalculator.h
+index 4cbcecf..dfa990e 100644
+--- a/src/calculator/gasCalculator.h
++++ b/src/calculator/gasCalculator.h
 @@ -28,7 +28,7 @@
  #include "ui_gasCalculator.h"
  
