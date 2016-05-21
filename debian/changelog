@@ -1,11 +1,15 @@
-kalzium (4:16.04.0-1~1.gbpacb5b4) UNRELEASED; urgency=medium
+kalzium (4:16.04.0-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @acb5b49740ba6b8ec737c824ecc876b852618191 **
-
+  [ Automatic packaging ]
   * Bump Standards-Version to 3.9.8
   * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 21 Apr 2016 04:27:27 +0200
+  [ Maximiliano Curia ]
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 21 May 2016 16:43:17 +0200
 
 kalzium (4:15.08.3-1) experimental; urgency=medium
 
