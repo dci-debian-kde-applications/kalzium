@@ -18,7 +18,6 @@ Build-Depends: chemical-mime-data,
                libopenbabel-dev,
                libqt4-opengl-dev,
                libsm-dev,
-               libsoprano-dev,
                libxext-dev,
                pkg-config,
                pkg-kde-tools (>= 0.14)
