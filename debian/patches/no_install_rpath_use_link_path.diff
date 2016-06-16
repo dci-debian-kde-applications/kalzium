@@ -1,28 +1,19 @@
 From: Modestas Vainius <modax@debian.org>
+Date: Thu, 21 Apr 2016 04:27:25 +0200
 Subject: disable INSTALL_RPATH_USE_LINK_PATH where it triggers useless RPATH
- .
- kalzium: lintian output: 'binary-or-shlib-defines-rpath ./usr/bin/kalzium /usr/lib/ocaml', automatically rejected package.
-Forwarded: not-needed
-Origin: vendor
-Last-Update: 2011-07-03
+ . kalzium: lintian output: 'binary-or-shlib-defines-rpath ./usr/bin/kalzium
+ /usr/lib/ocaml', automatically rejected package.
 
-Index: b/src/CMakeLists.txt
-===================================================================
---- a/src/CMakeLists.txt
-+++ b/src/CMakeLists.txt
-@@ -133,6 +133,7 @@
- 
- kde4_add_executable(kalzium ${kalzium_SRCS})
- 
-+set_target_properties(kalzium PROPERTIES INSTALL_RPATH_USE_LINK_PATH false)
- target_link_libraries(kalzium ${KDE4_KHTML_LIBRARY} ${KDE4_KNEWSTUFF3_LIBS} ${KDE4_KUNITCONVERSION_LIBS} ${QT_QTSCRIPT_LIBRARY} ${QT_QTDECLARATIVE_LIBRARY} science)
- 
- if (OPENBABEL2_FOUND)
-Index: b/compoundviewer/CMakeLists.txt
-===================================================================
+---
+ compoundviewer/CMakeLists.txt | 3 ++-
+ src/CMakeLists.txt            | 1 +
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/compoundviewer/CMakeLists.txt b/compoundviewer/CMakeLists.txt
+index 0971248..4a7fdbb 100644
 --- a/compoundviewer/CMakeLists.txt
 +++ b/compoundviewer/CMakeLists.txt
-@@ -22,6 +22,7 @@
+@@ -22,6 +22,7 @@ target_link_libraries(compoundviewer
     avogadro
  )
  
@@ -31,3 +22,15 @@ Index: b/compoundviewer/CMakeLists.txt
 +   INSTALL_RPATH_USE_LINK_PATH false)
  
  install(TARGETS compoundviewer ${INSTALL_TARGETS_DEFAULT_ARGS})
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 3cefc58..076bdb2 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -133,6 +133,7 @@ kde4_add_app_icon(kalzium_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/hi*-app-kalzium.png"
+ 
+ kde4_add_executable(kalzium ${kalzium_SRCS})
+ 
++set_target_properties(kalzium PROPERTIES INSTALL_RPATH_USE_LINK_PATH false)
+ target_link_libraries(kalzium ${KDE4_KHTML_LIBRARY} ${KDE4_KNEWSTUFF3_LIBS} ${KDE4_KUNITCONVERSION_LIBS} ${QT_QTSCRIPT_LIBRARY} ${QT_QTDECLARATIVE_LIBRARY} science)
+ 
+ if (OPENBABEL2_FOUND)
