@@ -1,9 +1,14 @@
-kalzium (4:16.04.0-2) UNRELEASED; urgency=medium
+kalzium (4:16.08.1-1~1.gbp1bf598) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @1bf5982b1e32d0c184e5ec2c9bfd7bda2b8073d9 **
 
   [ Pino Toscano ]
   * Remove unused libsoprano-dev build dependency.
 
- -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 11 Jun 2016 09:42:24 +0200
+  [ Debian/Kubuntu Qt/KDE Maintainers ]
+  * UNRELEASED
+
+ -- Debian/Kubuntu Qt/KDE Maintainers <jenkins@gnuservers.com.ar>  Fri, 09 Sep 2016 13:40:23 +0200
 
 kalzium (4:16.04.0-1) unstable; urgency=medium
 
