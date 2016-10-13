@@ -23,7 +23,7 @@ index 0971248..4a7fdbb 100644
  
  install(TARGETS compoundviewer ${INSTALL_TARGETS_DEFAULT_ARGS})
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 3cefc58..076bdb2 100644
+index 6801b9d..3390323 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
 @@ -133,6 +133,7 @@ kde4_add_app_icon(kalzium_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/hi*-app-kalzium.png"
