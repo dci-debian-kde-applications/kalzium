@@ -7,10 +7,11 @@ usr/lib/kde4/plasma_applet_molmassCalculator.so
 usr/lib/kde4/plasma_engine_kalzium.so
 usr/lib/libscience.so.4
 usr/lib/libscience.so.4.*
-usr/share/applications/kde4/kalzium.desktop
+usr/share/applications/kde4/org.kde.kalzium.desktop
 usr/share/kde4/services/concentrationCalculator.desktop
 usr/share/kde4/services/gasCalculator.desktop
 usr/share/kde4/services/nuclearCalculator.desktop
 usr/share/kde4/services/plasma-applet-Molmasscalculator.desktop
 usr/share/kde4/services/plasma-dataengine-kalzium.desktop
 usr/share/kde4/services/plasma_didyouknow.desktop
+usr/share/metainfo/org.kde.kalzium.appdata.xml
