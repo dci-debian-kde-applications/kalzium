@@ -1,6 +1,6 @@
-kalzium (4:16.08.2-1~2.gbpd25b5a) UNRELEASED; urgency=medium
+kalzium (4:16.08.2-1~3.gbp81afb6) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @d25b5a0e71e235eeabf83532ea1abd5589eca2e1 **
+  ** SNAPSHOT build @81afb6c76b8ad332b6b7da6601da21d17aee1d4f **
 
   [ Pino Toscano ]
   * Remove unused libsoprano-dev build dependency.
@@ -13,8 +13,9 @@ kalzium (4:16.08.2-1~2.gbpd25b5a) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * Update install files
+  * Update armhf install files
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Fri, 14 Oct 2016 20:27:28 +0200
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Fri, 14 Oct 2016 22:48:57 +0200
 
 kalzium (4:16.04.0-1) unstable; urgency=medium
 
