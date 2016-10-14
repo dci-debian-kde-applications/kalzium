@@ -1,6 +1,6 @@
-kalzium (4:16.08.2-1~1.gbp1b0144) UNRELEASED; urgency=medium
+kalzium (4:16.08.2-1~2.gbpd25b5a) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @1b0144384a7ed8ae2e9cf066c933fe9b748e6dab **
+  ** SNAPSHOT build @d25b5a0e71e235eeabf83532ea1abd5589eca2e1 **
 
   [ Pino Toscano ]
   * Remove unused libsoprano-dev build dependency.
@@ -11,7 +11,10 @@ kalzium (4:16.08.2-1~1.gbp1b0144) UNRELEASED; urgency=medium
   [ Automatic packaging ]
   * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 22:27:48 +0200
+  [ Maximiliano Curia ]
+  * Update install files
+
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Fri, 14 Oct 2016 20:27:28 +0200
 
 kalzium (4:16.04.0-1) unstable; urgency=medium
 
