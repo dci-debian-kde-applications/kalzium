@@ -1,21 +1,16 @@
-kalzium (4:16.08.2-1~3.gbp81afb6) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @81afb6c76b8ad332b6b7da6601da21d17aee1d4f **
+kalzium (4:16.08.2-1) unstable; urgency=medium
 
   [ Pino Toscano ]
   * Remove unused libsoprano-dev build dependency.
-
-  [ Debian/Kubuntu Qt/KDE Maintainers ]
-  * UNRELEASED
 
   [ Automatic packaging ]
   * Refresh patches
 
   [ Maximiliano Curia ]
+  * New upstream release (16.08.2)
   * Update install files
-  * Update armhf install files
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Fri, 14 Oct 2016 22:48:57 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 23:54:20 +0200
 
 kalzium (4:16.04.0-1) unstable; urgency=medium
 
