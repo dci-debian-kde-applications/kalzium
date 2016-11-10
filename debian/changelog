@@ -1,3 +1,11 @@
+kalzium (4:16.08.3-1~1.gbp6b81b7) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @6b81b7e519f03f458d11e9232d80f7dd2420a244 **
+
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 10 Nov 2016 22:27:46 +0100
+
 kalzium (4:16.08.2-1) unstable; urgency=medium
 
   [ Pino Toscano ]
