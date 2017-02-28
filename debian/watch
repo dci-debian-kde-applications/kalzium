@@ -1,3 +1,7 @@
 version=4
+<<<<<<< HEAD
 opts=pgpsigurlmangle=s/$/.sig/ \
  http://download.kde.org/stable/applications/([\d.]+)/src/@PACKAGE@@ANY_VERSION@@ARCHIVE_EXT@
+=======
+opts=pgpsigurlmangle=s/$/.sig/ http://download.kde.org/stable/applications/([\d.]+)/src/kalzium-([\d.]+).tar.xz
+>>>>>>> Neon/release-lts
