@@ -13,5 +13,4 @@
 ./usr/include/libkdeedu/psetables.h
 ./usr/include/libkdeedu/spectrum.h
 ./usr/include/libkdeedu/spectrumparser.h
-./usr/lib/libcompoundviewer.so
-./usr/lib/libscience.so
+usr/lib/*/libscience.so
