@@ -60,6 +60,8 @@ Package: kalzium-data
 Architecture: all
 Section: science
 Depends: ${misc:Depends}
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
 Description: data files for Kalzium
  This package contains architecture-independent data files for Kalzium, the
  KDE periodic table application.
