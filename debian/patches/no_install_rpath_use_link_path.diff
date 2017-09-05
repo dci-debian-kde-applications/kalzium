@@ -9,11 +9,9 @@ Subject: disable INSTALL_RPATH_USE_LINK_PATH where it triggers useless RPATH
  src/CMakeLists.txt            | 1 +
  2 files changed, 3 insertions(+), 1 deletion(-)
 
-Index: kalzium/compoundviewer/CMakeLists.txt
-===================================================================
---- kalzium.orig/compoundviewer/CMakeLists.txt
-+++ kalzium/compoundviewer/CMakeLists.txt
-@@ -30,6 +30,7 @@ target_link_libraries(compoundviewer
+--- a/compoundviewer/CMakeLists.txt
++++ b/compoundviewer/CMakeLists.txt
+@@ -30,6 +30,7 @@
  set_target_properties(compoundviewer PROPERTIES
      VERSION ${KALZIUMLIB_VERSION}
      SOVERSION ${KALZIUMLIB_SOVERSION}
@@ -21,3 +19,13 @@ Index: kalzium/compoundviewer/CMakeLists.txt
  )
  
  install(TARGETS compoundviewer ${INSTALL_TARGETS_DEFAULT_ARGS})
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -135,6 +135,7 @@
+ 
+ add_executable(kalzium ${kalzium_SRCS})
+ 
++set_target_properties(kalzium PROPERTIES INSTALL_RPATH_USE_LINK_PATH false)
+ target_link_libraries(kalzium
+     KF5::Plotting
+     KF5::KHtml
