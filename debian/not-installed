@@ -1,32 +1,17 @@
 # compressed manpage
-./usr/share/man/man1/kalzium.1
-./usr/share/man/ca/man1/kalzium.1
-./usr/share/man/da/man1/kalzium.1
-./usr/share/man/de/man1/kalzium.1
-./usr/share/man/es/man1/kalzium.1
-./usr/share/man/et/man1/kalzium.1
-./usr/share/man/fr/man1/kalzium.1
-./usr/share/man/gl/man1/kalzium.1
-./usr/share/man/it/man1/kalzium.1
-./usr/share/man/nl/man1/kalzium.1
-./usr/share/man/pl/man1/kalzium.1
-./usr/share/man/pt_BR/man1/kalzium.1
-./usr/share/man/pt/man1/kalzium.1
-./usr/share/man/ru/man1/kalzium.1
-./usr/share/man/sv/man1/kalzium.1
-./usr/share/man/uk/man1/kalzium.1
+usr/share/man/
 
 # These would belong to kalzium-dev
-./usr/include/libkdeedu/chemicaldataobject.h
-./usr/include/libkdeedu/element.h
-./usr/include/libkdeedu/elementparser.h
-./usr/include/libkdeedu/isotope.h
-./usr/include/libkdeedu/isotopeparser.h
-./usr/include/libkdeedu/libkdeedu_science_export.h
-./usr/include/libkdeedu/moleculeparser.h
-./usr/include/libkdeedu/parser.h
-./usr/include/libkdeedu/psetables.h
-./usr/include/libkdeedu/spectrum.h
-./usr/include/libkdeedu/spectrumparser.h
+usr/include/libkdeedu/chemicaldataobject.h
+usr/include/libkdeedu/element.h
+usr/include/libkdeedu/elementparser.h
+usr/include/libkdeedu/isotope.h
+usr/include/libkdeedu/isotopeparser.h
+usr/include/libkdeedu/libkdeedu_science_export.h
+usr/include/libkdeedu/moleculeparser.h
+usr/include/libkdeedu/parser.h
+usr/include/libkdeedu/psetables.h
+usr/include/libkdeedu/spectrum.h
+usr/include/libkdeedu/spectrumparser.h
 usr/lib/*/libscience.so
 usr/lib/*/libcompoundviewer.so
