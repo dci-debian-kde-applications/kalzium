@@ -9,28 +9,15 @@ Subject: disable INSTALL_RPATH_USE_LINK_PATH where it triggers useless RPATH
  src/CMakeLists.txt            | 1 +
  2 files changed, 3 insertions(+), 1 deletion(-)
 
-diff --git a/compoundviewer/CMakeLists.txt b/compoundviewer/CMakeLists.txt
-index 0971248..4a7fdbb 100644
---- a/compoundviewer/CMakeLists.txt
-+++ b/compoundviewer/CMakeLists.txt
-@@ -22,6 +22,7 @@ target_link_libraries(compoundviewer
-    avogadro
+Index: kalzium/compoundviewer/CMakeLists.txt
+===================================================================
+--- kalzium.orig/compoundviewer/CMakeLists.txt
++++ kalzium/compoundviewer/CMakeLists.txt
+@@ -30,6 +30,7 @@ target_link_libraries(compoundviewer
+ set_target_properties(compoundviewer PROPERTIES
+     VERSION ${KALZIUMLIB_VERSION}
+     SOVERSION ${KALZIUMLIB_SOVERSION}
++    INSTALL_RPATH_USE_LINK_PATH false
  )
  
--set_target_properties(compoundviewer PROPERTIES VERSION ${GENERIC_LIB_VERSION} SOVERSION ${GENERIC_LIB_SOVERSION})
-+set_target_properties(compoundviewer PROPERTIES VERSION ${GENERIC_LIB_VERSION} SOVERSION ${GENERIC_LIB_SOVERSION}
-+   INSTALL_RPATH_USE_LINK_PATH false)
- 
  install(TARGETS compoundviewer ${INSTALL_TARGETS_DEFAULT_ARGS})
-diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 6801b9d..3390323 100644
---- a/src/CMakeLists.txt
-+++ b/src/CMakeLists.txt
-@@ -133,6 +133,7 @@ kde4_add_app_icon(kalzium_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/hi*-app-kalzium.png"
- 
- kde4_add_executable(kalzium ${kalzium_SRCS})
- 
-+set_target_properties(kalzium PROPERTIES INSTALL_RPATH_USE_LINK_PATH false)
- target_link_libraries(kalzium ${KDE4_KHTML_LIBRARY} ${KDE4_KNEWSTUFF3_LIBS} ${KDE4_KUNITCONVERSION_LIBS} ${QT_QTSCRIPT_LIBRARY} ${QT_QTDECLARATIVE_LIBRARY} science)
- 
- if (OPENBABEL2_FOUND)
