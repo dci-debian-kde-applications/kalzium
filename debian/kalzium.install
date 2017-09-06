@@ -1,6 +1,4 @@
 usr/bin/kalzium
-usr/lib/*/libcompoundviewer.so.5
-usr/lib/*/libcompoundviewer.so.5.*
 usr/lib/*/libscience.so.5
 usr/lib/*/libscience.so.5.*
 usr/share/applications/org.kde.kalzium.desktop
