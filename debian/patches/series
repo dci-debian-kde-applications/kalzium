@@ -1,2 +1,3 @@
 no_install_rpath_use_link_path.diff
 avoid_nameclash.patch
+add_missing_include.patch

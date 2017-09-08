@@ -29,3 +29,4 @@
 ./usr/include/libkdeedu/spectrum.h
 ./usr/include/libkdeedu/spectrumparser.h
 usr/lib/*/libscience.so
+usr/lib/*/libcompoundviewer.so
