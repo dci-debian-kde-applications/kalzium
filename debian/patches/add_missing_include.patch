@@ -1,0 +1,11 @@
+diff --git a/src/kalzium.cpp b/src/kalzium.cpp
+index d7c9b4c..3bfdd3a 100644
+--- a/src/kalzium.cpp
++++ b/src/kalzium.cpp
+@@ -69,6 +69,7 @@
+ #include <QGridLayout>
+ #include <KLocalizedString>
+ #include <QStandardPaths>
++#include <QGLFormat>
+
+ #define IDS_ELEMENTINFO     7
