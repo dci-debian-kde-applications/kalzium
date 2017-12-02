@@ -6,6 +6,7 @@ kalzium (4:17.08.3-0r1) UNRELEASED; urgency=medium
     drop translations.
   * Bump Standards-Version to 4.1.1, no changes required.
   * Simplify watch file, and switch it to https.
+  * Remove trailing whitespaces in changelog.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 02 Dec 2017 09:47:03 +0100
 
@@ -234,7 +235,7 @@ kalzium (4:4.13.2-0ubuntu2) utopic; urgency=medium
 kalzium (4:4.13.2-0ubuntu1) utopic; urgency=medium
 
   [ Scarlett Clark ]
-  * Debian merge: no remaining changes 
+  * Debian merge: no remaining changes
 
   [ Jonathan Riddell ]
   * new upstream release
@@ -375,7 +376,7 @@ kalzium (4:4.11.0-0ubuntu1) saucy; urgency=low
   * New upstream release
   * Removed libboost-python-dev as build-dep
     due to multiarch problems
- 
+
   [ Jonathan Riddell ]
   * New upstream release
 
@@ -548,7 +549,7 @@ kalzium (4:4.9.1-0ubuntu1) quantal; urgency=low
   * New upstream release
 
   [ Philip Muškovac ]
-  * Change sonames from 4.9.0 to 4.9.* 
+  * Change sonames from 4.9.0 to 4.9.*
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 10 Sep 2012 18:16:30 +0530
 
@@ -596,7 +597,7 @@ kalzium (4:4.8.2-0ubuntu2) quantal; urgency=low
 
   * Drop libglew1.5-dev from build-depends and instead build-depend on
     libavogadro-dev >= 1.0.3-1ubuntu5 (LP: #930111)
-  * Switch libboost-python build-dep to 1.49 
+  * Switch libboost-python build-dep to 1.49
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 20 May 2012 12:33:02 +0200
 
@@ -608,7 +609,7 @@ kalzium (4:4.8.2-0ubuntu1) precise; urgency=low
 
 kalzium (4:4.8.1-0ubuntu1) precise; urgency=low
 
-  * New upstream release 
+  * New upstream release
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 20:04:51 +0100
 
@@ -655,8 +656,8 @@ kalzium (4:4.7.4-2) unstable; urgency=low
 
 kalzium (4:4.7.4-1) experimental; urgency=low
 
-  * New upstream release. 
-  
+  * New upstream release.
+
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.7.4.
 
@@ -743,22 +744,22 @@ kalzium (4:4.7.0-0ubuntu3) oneiric; urgency=low
 
 kalzium (4:4.7.0-0ubuntu2) oneiric; urgency=low
 
-  * Bump breaks/replaces on libkdeedu4 to catch 4.6.5 packages 
+  * Bump breaks/replaces on libkdeedu4 to catch 4.6.5 packages
 
  -- Philip Muškovac <yofel@kubuntu.org>  Thu, 28 Jul 2011 18:07:10 +0200
 
 kalzium (4:4.7.0-0ubuntu1) oneiric; urgency=low
 
-  * New upstream release 
+  * New upstream release
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sat, 23 Jul 2011 00:04:32 +0200
 
 kalzium (4:4.6.90+repack-0ubuntu2) oneiric; urgency=low
 
   * debian/control:
-    - libcompoundviewer4 breaks/replaces kalzium << 4:4.6.80 
+    - libcompoundviewer4 breaks/replaces kalzium << 4:4.6.80
     - don't build libcompoundviewer4 on armel
-  * remove kalzium.install.armel and add kalzium-dev.install.armel since the 
+  * remove kalzium.install.armel and add kalzium-dev.install.armel since the
     relevant files moved.
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 10 Jul 2011 01:06:39 +0200
