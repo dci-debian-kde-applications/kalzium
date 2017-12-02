@@ -1,3 +1,12 @@
+kalzium (4:17.08.0-1.1) experimental; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix "kalzium FTBFS with OCaml 4.05.0: Options -c and -o are
+    incompatible when compiling C files" by applying patch from
+    Stéphane Glondu, via the BTS (Closes: #869869)
+
+ -- Tobias Frost <tobi@debian.org>  Sun, 22 Oct 2017 16:47:55 +0200
+
 kalzium (4:17.08.0-1) experimental; urgency=medium
 
   * New upstream release (17.08.0)
