@@ -13,6 +13,8 @@ kalzium (4:17.08.3-0r1) UNRELEASED; urgency=medium
     work fine.
   * Update lintian overrides.
   * Update Vcs-* fields.
+  * Do not ship translations of Plasma-related stuff, since they are not
+    ported yet.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 02 Dec 2017 09:47:03 +0100
 
